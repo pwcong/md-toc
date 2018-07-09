@@ -1,4 +1,5 @@
 const MDTOC_DEFAULT_OPTIONS = {
+  name: 'mdtoc',
   prefix: '',
   filter: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 };
@@ -49,13 +50,12 @@ export default function(selector, options) {
     .map(node => ({
       heading: parseInt(node.tagName[1]),
       name: node.innerHTML,
-      link: prefix + node.id
+      link: '#' + _options.prefix + node.id
     }));
 
   let tocTree = {
     heading: 0,
-    name: 'root',
-    link: '#root',
+    name: _options.name,
     children: []
   };
 
