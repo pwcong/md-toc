@@ -1,5 +1,5 @@
 {
-  "name": "md-toc",
+  "name": "mdtoc.js",
   "version": "1.0.0",
   "description": "Generate a table of contents based on the heading structure of a html document.",
   "main": "src/main.js",
