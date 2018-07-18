@@ -1,11 +1,11 @@
 # MD Toc
 
-Generate a table of contents based on the heading structure of a html document.
+Generate a table of contents based on the heading structure of a html document. Preview demo [here](https://pwcong.github.io/mdtoc.js/public/index.html)
 
 ## Install
 
 ```shell
-npm install md-toc --save
+npm install mdtoc.js --save
 ```
 
 OR
@@ -18,7 +18,10 @@ OR
 
 **mdtoc(selector, options)**
 
-Default Options: 
+- get(): get mdtoc tree
+- make(useLink): make mdtoc tree node
+
+Default Options:
 
 ```javascript
 {
@@ -33,8 +36,7 @@ Example:
 ```javascript
 var tocTree = mdtoc('#md');
 
-console.log(tocTree);
-
+console.log(tocTree.get());
 // {
 //   "heading": 0,
 //   "name": "mdtoc",
@@ -56,5 +58,17 @@ console.log(tocTree);
 //     }
 //   ]
 // }
+
+toc.appendChild(tocTree.make(true));
+// <ol id="mdtoc">
+//   <li>
+//     <a href="#h1">H1</a>
+//     <ol>
+//       <li>
+//         <a href="#h2-1">H2-1</a>
+//         ...
+//     </ol>
+//   </li>
+// </ol>
 
 ```

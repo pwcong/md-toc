@@ -6,33 +6,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MD Toc</title>
+
+  <style>
+    html,
+    body {
+      background-color: #f5f5f5;
+    }
+
+    #md {
+      position: relative;
+      left: -100px;
+      background-color: white;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+      max-width: 600px;
+      padding: 12px 24px;
+      margin: 0 auto;
+    }
+
+    #toc {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      background-color: #333;
+      color: orangered;
+    }
+
+    #toc a {
+      color: white;
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <div id="md">
+  <article id="md">
 
-    <h1 id="h-1">h1</h1>
-    <h2 id="h-1-2">h2</h2>
-    <h3 id="h-1-2-3">h3</h3>
-    <h4 id="h-1-2-3-4">h4</h4>
-    <h5 id="h-1-2-3-4-5">h5</h5>
-    <h6 id="h-1-2-3-4-5-6">h6</h6>
+    <h1 id="h1">H1</h1>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <h2 id="h2-1">H2-1</h2>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <h3 id="h3-1">H3-1</h3>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <h3 id="h3-2">H3-2</h3>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <h2 id="h2-2">H2-2</h2>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
+    <p>Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </p>
 
-    <h1 id="h-1">h1</h1>
-    <h2 id="h-1-2">h2</h2>
-    <h3 id="h-1-2-3">h3</h3>
-    <h2 id="h-1-2">h2</h2>
-    <h3 id="h-1-2-3">h3</h3>
-    <h4 id="h-1-2-3-4">h4</h4>
-    <h4 id="h-1-2-3-4">h4</h4>
 
-  </div>
+  </article>
+
+  <aside id="toc"></aside>
 
   <script src="mdtoc.debug.js"></script>
+
   <script>
-    var tocTree = mdtoc('#md');
-    console.log(tocTree);
+    if (!window.mdtoc) {
+      document.write('<script src="..\/dist\/mdtoc.min.js"><\/script>');
+    }
+  </script>
+
+  <script>
+
+    var res = mdtoc('#md');
+    console.log(res.get());
+
+    document.getElementById('toc').appendChild(res.make(true));
+
   </script>
 </body>
 
